@@ -11,14 +11,12 @@ form.addEventListener('input', handleInputValues);
 function handleInputValues(e) {
   formInput[e.target.name] = Number(e.target.value);
 
-  // console.log(formInput);
-  // return formInput;
+ 
 }
 
 function handleSubmitForm(e) {
   e.preventDefault();
-  // console.log(formInput);
-
+  
   let { delay, step, amount } = formInput;
   for (let i = 1; i <= amount; i+=1) {
     position = i;
